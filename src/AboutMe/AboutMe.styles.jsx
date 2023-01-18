@@ -21,23 +21,41 @@ export const ContainerText = styled.div`
   }
 `;
 export const Title = styled.h1`
-margin: 0;
-padding: 20px 0;
-p {
   margin: 0;
-}
-p:nth-child(2) {
-  font-size: 55px;
-  background: ${colors.TEXT_GRADIENT_PURPLE};
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-}
-@media (max-width: 768px) {
-  padding: 0;
-  text-align: center;
-  p:nth-child(2) {
-    font-size: 2rem;
+  padding: 20px 0;
+  p {
+    margin: 0;
   }
-}
-
+  p:nth-child(2) {
+    font-size: 55px;
+    background: ${colors.TEXT_GRADIENT_PURPLE};
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+  }
+  @media (max-width: 768px) {
+    padding: 0;
+    text-align: center;
+    p:nth-child(2) {
+      font-size: 2rem;
+    }
+  }
+`;
+export const DescriptionText = styled.div`
+  font-size: 16px;
+  color: ${colors.TEXT_GREY_NEUTRAL};
+  padding-rigth: 100px;
+  @media (max-width: 768px) {
+    padding-right: 0;
+  }
+`;
+export const ContainerIcons = styled.div`
+  display: flex;
+  img {
+    width: 32px;
+    heidht: 32px;
+    margin: 10px;
+  }
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 `;
