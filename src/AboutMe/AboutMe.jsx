@@ -8,7 +8,7 @@ const AboutMe = () => {
     <S.ContainerText>
         <S.Title>
             <p>Hello, i'm</p>
-            <p>Hector Ramirez</p>
+            <p>Héctor Ramírez</p>
             <p>Full Stack</p>
         </S.Title>
     </S.ContainerText>
