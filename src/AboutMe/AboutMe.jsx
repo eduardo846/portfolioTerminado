@@ -48,6 +48,9 @@ const AboutMe = () => {
             ))}
           </S.ContainerIcons>
         </S.ContainerText>
+        <S.ContainerImage>
+          <img src="/img/Perfil.png" alt="imagen perfil" />
+        </S.ContainerImage>
       </S.ContainerFlex>
     </S.ContainerAboutMe>
   );
