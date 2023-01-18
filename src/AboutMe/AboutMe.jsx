@@ -14,7 +14,7 @@ const AboutMe = () => {
     },
     {
       name: "LinkedIn",
-      link: "www.linkedin.com/in/héctor-eduardo-ramírez-29b740a0",
+      link: "https://www.linkedin.com/in/h%C3%A9ctor-eduardo-ram%C3%ADrez-29b740a0/",
       logo: logoLinkedIn,
     },
 
