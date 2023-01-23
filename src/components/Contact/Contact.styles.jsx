@@ -56,3 +56,11 @@ export const Button = styled.button`
   width: 150px;
   text-transform: uppercase;
 `;
+export const ContainerConditions = styled.div`
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  span {
+    color: ${colors.TEXT_BLACK};
+  }
+`;
