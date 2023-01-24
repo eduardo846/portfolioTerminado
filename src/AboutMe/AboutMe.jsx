@@ -17,7 +17,6 @@ const AboutMe = () => {
       link: "https://www.linkedin.com/in/h%C3%A9ctor-eduardo-ram%C3%ADrez-29b740a0/",
       logo: logoLinkedIn,
     },
-
   ];
 
   return (
@@ -30,10 +29,9 @@ const AboutMe = () => {
             <p>Full Stack</p>
           </S.Title>
           <S.DescriptionText>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore
-            nihil eaque doloremque dolorum, autem eligendi mollitia sint
-            accusantium, provident ipsam quasi? Architecto culpa assumenda
-            mollitia dolore explicabo?
+            Desarrollador Jr con experiencia en React y Node.js. Busco unirme a
+            un equipo de desarrollo enfocado en la creación de aplicaciones web
+            de alta calidad. Tengo habilidades en JavaScript, HTML, CSS y Git.
           </S.DescriptionText>
           <S.ContainerIcons>
             {socialNetworks.map((network, index) => (
