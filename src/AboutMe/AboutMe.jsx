@@ -29,9 +29,9 @@ const AboutMe = () => {
             <p>Full Stack</p>
           </S.Title>
           <S.DescriptionText>
-            Desarrollador Jr con experiencia en React y Node.js. Busco unirme a
-            un equipo de desarrollo enfocado en la creación de aplicaciones web
-            de alta calidad. Tengo habilidades en JavaScript, HTML, CSS y Git.
+            Jr developer with experience in React and Node.js. I'm looking to
+            join a team of Development focused on the creation of high quality
+            web applications. Have skills in JavaScript, HTML, CSS and Git.
           </S.DescriptionText>
           <S.ContainerIcons>
             {socialNetworks.map((network, index) => (
