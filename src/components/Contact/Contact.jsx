@@ -7,10 +7,12 @@ const Contact = () => {
     name: "",
     email: "",
     message: "",
-    checkTerms: false,
+    checkedTerms: false,
   });
+
   const [emptyInputs, setEmptyInputs] = useState(false);
   const [successSendForm, setSuccessSendForm] = useState(false);
+  const [errorSendForm, setErrorSendForm] = useState(false);
 
   const form = useRef();
   //console.log(import.meta.env.VITE_REACT_APP_EMAILJS_SERVICE_ID)
@@ -23,7 +25,7 @@ const Contact = () => {
       contactDates.name === "" ||
       contactDates.email === "" ||
       contactDates.message === "" ||
-      contactDates.checkTerms === false
+      contactDates.checkedTerms === false
     ) {
       setEmptyInputs(true);
     } else {
@@ -39,12 +41,10 @@ const Contact = () => {
             setSuccessSendForm(true);
           },
           (error) => {
-            console.log("ERROR");
+            setErrorSendForm(true);
           }
         );
     }
-
-    //enviar formulario
   };
 
   return (
@@ -52,7 +52,7 @@ const Contact = () => {
       <S.Title>Contact with me</S.Title>
       <S.ContainerForm>
         {successSendForm ? (
-          <p>The form was sent succesfully</p>
+          <S.SucessMessage>The form was sent succesfully</S.SucessMessage>
         ) : (
           <S.Form onSubmit={onSubmit} ref={form}>
             <S.InputForm
@@ -87,7 +87,7 @@ const Contact = () => {
                 onChange={(e) =>
                   setContactDates({
                     ...contactDates,
-                    checkTerms: e.target.checked,
+                    checkedTerms: e.target.checked,
                   })
                 }
               />
@@ -96,10 +96,13 @@ const Contact = () => {
             <S.Button type="submit">Send</S.Button>
           </S.Form>
         )}
+        {emptyInputs && (
+          <p>You should fill all the inputs and accept the terms</p>
+        )}
+        {errorSendForm && (
+          <S.TextError>There was an error, try it later.</S.TextError>
+        )}
       </S.ContainerForm>
-      {emptyInputs && (
-        <p>You should fill all the inputs and accept the terms</p>
-      )}
     </S.ContainerContact>
   );
 };

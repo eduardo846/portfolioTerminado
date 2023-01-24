@@ -64,3 +64,12 @@ export const ContainerConditions = styled.div`
     color: ${colors.TEXT_BLACK};
   }
 `;
+export const TextError = styled.p`
+  color: red;
+  font-size: 15px;
+`;
+
+export const SucessMessage = styled.p`
+  color: green;
+  font-size: 15px;
+`;
